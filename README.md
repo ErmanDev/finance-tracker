@@ -4,6 +4,12 @@ A local Philippine Peso (₱) cashbook. One window, one SQLite file, no accounts
 
 Amounts are stored as integer centavos. The app never keeps pesos as floating-point numbers.
 
+## Download
+
+Go to [Releases](https://github.com/ErmanDev/finance-tracker/releases), pick the file for your laptop (Windows `.msi`, Mac `.dmg`), install it, and open Ledger.
+
+Windows SmartScreen and Mac Gatekeeper may warn because this build is unsigned. That is expected.
+
 ## Clone from Origin
 
 ```bash
