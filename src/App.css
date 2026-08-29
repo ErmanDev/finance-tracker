@@ -84,6 +84,31 @@ h1 {
   margin: 0 auto;
 }
 
+.home-brand {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-logo {
+  display: block;
+  width: 128px;
+  height: 128px;
+  max-width: 128px;
+  max-height: 128px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+}
+
+.home-logo-empty {
+  width: 96px;
+  height: 96px;
+  max-width: 96px;
+  max-height: 96px;
+}
+
 .home-header {
   display: flex;
   align-items: flex-end;
@@ -221,7 +246,15 @@ h1 {
 }
 
 .status.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
   font-size: 16px;
+}
+
+.status.empty p {
+  margin: 0;
 }
 
 .entry-list {

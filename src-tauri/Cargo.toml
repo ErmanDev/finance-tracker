@@ -1,6 +1,6 @@
 [package]
 name = "ledger"
-version = "1.0.0"
+version = "1.0.1"
 description = "Local Philippine Peso ledger"
 authors = ["Ledger"]
 edition = "2021"

@@ -47,6 +47,15 @@ export function Home({
 
   return (
     <section className="home">
+      <div className="home-brand">
+        <img
+          className="home-logo"
+          src="/logo.png"
+          alt="Ledger"
+          width={128}
+          height={128}
+        />
+      </div>
       <header className="home-header">
         <div>
           <p className="eyebrow">Ledger</p>
@@ -123,7 +132,18 @@ export function Home({
             </button>
           </div>
         ) : null}
-        {empty ? <p className="status empty">No entries this month.</p> : null}
+        {empty ? (
+          <div className="status empty">
+            <img
+              className="home-logo home-logo-empty"
+              src="/logo.png"
+              alt=""
+              width={96}
+              height={96}
+            />
+            <p>No entries this month.</p>
+          </div>
+        ) : null}
 
         {entries.length > 0 ? (
           <ul className="entry-list">
